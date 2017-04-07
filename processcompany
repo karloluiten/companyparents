@@ -1,0 +1,8 @@
+#!/bin/bash
+grep -E '\| (name|parent)' infocompany  | grep -EB1 'parent\s*=.*[a-zA-Z]' | grep '|' > info2
+
+for i in {1..20} ; do
+  sed -i 's/  / /g' info2
+done
+sed -i  "s/'''//g;s/^ *//g" info2
+head info2
