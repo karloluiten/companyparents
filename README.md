@@ -4,4 +4,4 @@
 * process infocompany
 * creates info2
 * Cleanup
-# interesting stuff is in info2
+# interesting stuff is in data.csv
